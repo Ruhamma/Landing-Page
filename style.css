@@ -8,6 +8,7 @@
 }
 body{
     overflow-x: hidden;
+    background-color: #eef1f7;
 }
 
 
@@ -84,7 +85,7 @@ body{
     font-size: 1.3em;
    width:800px;
 }
-#signUp1{
+#signUp1,#signUp2{
    background-color:#ffffff;
    color:#1f2937;
    font-size:1.3em;
@@ -97,7 +98,6 @@ body{
 
 /*secondPage*/
 #second{
-    background-color: #eef1f7;
     color: #1f2937;
     position: absolute;
     top:107vh;
@@ -171,21 +171,64 @@ body{
     top:207vh;
     left:0;
     width:100vw;
-    height: 80vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E7EB;
+    font-size: 29px;
+    font-style: italic;
+    font-weight: 100;
+   color: #1f2937;
+    
+}
+#third h3{
+    width: 800px;
+}
+#third p{
+    margin-left: 400px;
+   
 }
 /*fourthPage*/
 #fourth{
     position: absolute;
-    top:287vh;
+    top:307vh;
     left:0;
     width:100vw;
     height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+#signContainer{
+    background-color: #3882f6;
+    color: #E5E7EB;
+    width:60vw;
+    height:30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 13px;
+}
+#fourthText h2{
+   
+    font-size: 1.8em;
+    font-weight: 900;
+}
+
+
+
 /*footer*/
 footer{
     position: absolute;
-    top:387vh;
+    top:367vh;
     left:0;
     width:100vw;
-    height: 10vh;
+    height: 5vh;
+    background-color: #1f2937;
+    color: #E5E7EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
