@@ -26,10 +26,14 @@ body{
     color:white;
     z-index:10;
 }
-#navBar h2{
+#logoContainer{
     font-weight: 900;
     font-size: 1.8em;
-    margin-left:90px;
+    margin-left:20px;
+    display: flex;
+    align-items: center;
+    
+    width:14vw;
 }
 #links{
   width:30vw;
@@ -50,7 +54,9 @@ body{
     color: #1f2937;
     transition: all 0.3s ease-in;
 }
-
+#logo{
+    width: 80px;
+}
 
 /*firstPage*/
 #first{
