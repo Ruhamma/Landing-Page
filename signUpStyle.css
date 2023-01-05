@@ -8,21 +8,29 @@
 }
 body{
     display: flex;
-    background-color: #ebeef3;
+    background-image: url("images/pexels-creative-vix-9754.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:60px;
 }
 #logo{ 
-    background-color:#1f2937c7;
+    background-color:#1f2937;
     width: 100%;
-    height:20vh;
+    height:10vh;
     display: flex;
     align-items: center;
     justify-content:center;
     font-size: 3vw;
     font-weight: 900;
     font-family: "Poppins",sans-serif;
+    border-radius:17px 17px 0px 0px;
 }
 #logo img{
-    width:10vw;
+    width:5vw;
 }
 #logo p{
     display: inline;  
@@ -37,25 +45,21 @@ body{
     align-items:flex-end;
     justify-content:center;
 }
-#image{
-    height: 100vh;
-    width:60vw;
-    background-image: url("images/pexels-philip-ackermann-1666021.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: brightness(0.9);
-}
 
 #textContent{
-    margin-left: 50px;
+    width:40vw;
     display: flex;
     flex-direction: column;
     gap:30px;
     justify-content: center;
+    align-items: center;
+    background-color: #ebeef3b4;
     color: #1f2937;
+    border-radius: 17px;
+    box-shadow: 2px 4px 50px rgba(0, 0, 0, 0.582);
 }
 #textContent h3{
-    font-size: 4em;
+    font-size: 2em;
     line-height: 1.1em;
 }
 #freeAccount{
@@ -66,25 +70,22 @@ body{
 }
 
 #input{
-    margin-left:-50px;
     height: 300px;
     outline: none;
     border: transparent;
-    background-color: #ebeef3;
+    background-color: #ebeef3bb;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; 
-    padding-left: 50px;
-}
-#input h2{
-    width: 100%;
+    justify-content: center; 
+    align-items: center;
 }
 #inputContainer{
-    width:60%;
-    height: 70%;
+    background-color: #1f293700;
+    width:100%;
+    height: 80%;
     display: flex;
-    align-items:stretch;
-    justify-content: space-between;
+    align-items:center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 #inputContainer>div>label>span{
@@ -97,7 +98,7 @@ label{
 input{
     display: inline;
     border: 1px solid #1f2937;
-    border-radius: 4px;
+    border-radius: 7px;
     height:30px;
     padding-left:10px;
     font-size: 1.01em;
@@ -117,12 +118,14 @@ button{
     padding:10px 40px;
     font-size: 1.2em;
     border-radius: 7px;
-    margin-bottom: 10px;
     outline: none;
     border: transparent;
     box-shadow: 1px 2px 4px #1f2937;  
     cursor: pointer;
-    transition: all 0.3s linear;
+    transition: scale 0.3s linear;
+    margin-left: 14vw;
+    margin-right: 10vw;
+    margin-top:20px;
 }
 button:hover{
     scale: 1.03;
@@ -130,7 +133,7 @@ button:hover{
 }
 a:not(#mount){
     text-decoration: none;
-    color:#1f2937;
+    color:#3165ad;
     font-size: 1.1em;
     font-weight: 900;
     transition:color 0.3s linear
@@ -138,4 +141,122 @@ a:not(#mount){
 a:hover{
   color: #8198b9;
   transition:color 0.3s linear
+}
+#policy{
+    font-size: 0.9em;
+    text-align: center;
+    margin-top:-20px;
+    padding:20px
+}
+
+@media screen and (max-width:287px){
+    #logo{
+        font-size: 7vw;
+    }
+    #logo img{
+        width:17vw;
+    }
+    #logo p{
+        margin-bottom: -10px;
+    }
+    #textContent{
+        width:90vw;
+    }
+    input{
+        width:200px;
+    }
+    #textContent h3{
+        font-size: 1.1em;
+        font-weight: 900;
+    }
+    #freeAccount{
+        font-size: 0.9em;
+    }
+    #input{
+        height: 360px;
+    }
+    button{
+        margin-left: 30px;
+        font-size:0.9em;
+    }
+    label{
+        font-size:0.7em;
+    }
+    #login{
+        text-align:center;
+        padding: 0px 10px;
+    }
+}
+@media screen and (min-width:287px) and (max-width:767px) {
+    body{
+        padding-top: 30px;
+    }
+    #logo{
+        font-size: 6vw;
+    }
+    #logo img{
+        width:17vw;
+    }
+    #logo p{
+        margin-bottom: -10px;
+    }
+     #textContent{
+        width:90vw;
+    }
+    #textContent h3{
+        font-size: 1.5em;
+        font-weight: 900;
+    }
+    #freeAccount{
+        font-size: 1em;
+    }
+    #input{
+        height: 360px;
+    }
+    button{
+        margin-left: 18vw;
+        margin-right: 10vw;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+   
+    #logo{
+        font-size: 6vw;
+    }
+    #logo img{
+        width:17vw;
+    }
+    #logo p{
+        margin-bottom: -20px;
+    }
+     #textContent{
+        width:70vw;
+    }
+   input{
+    width:250px;
+   }
+   button{
+    margin-left: 20vw;
+    margin-right: 10vw;
+   }
+}
+@media screen and (min-width:1028px) and (max-width:1280px)  {
+    #textContent{
+        width:70vw;
+    }  
+    button{
+        margin-left: 23vw;
+        margin-right: 10vw;
+       }
+}
+@media screen and (min-width:1281px) and (max-width:1640px)  {
+   
+   #textContent{
+    width:70vw;
+   }
+   button{
+    margin-left: 26vw;
+    margin-right: 10vw;
+   }
 }

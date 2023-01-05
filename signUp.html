@@ -8,22 +8,19 @@
     <link rel="stylesheet" href="signUpStyle.css">
 </head>
 <body>
-    <div id="image">
+    
+    <div id="textContent">
         <div id="logo">
             <div id="logoContainer">
             <img src="images/logo2.png" alt="Mount Logo">
              <p><a href="index.html" id="mount">Mount</a> </p>
             </div>
         </div>
-    </div>
-    <div id="textContent">
         <h3>Sign up to new adventures</h3>         
         <p id="freeAccount">Create your free account</p>
         <form action="" method="post">  
             <fieldset id="input">
-                <h2>Let's do this!</h2>
                     <div id="inputContainer">
-    
                     <div>
                          <label for="first_name"><span>* </span>FIRST NAME</label>
                          <input type="text" name="first_name" id="first_name" required>
@@ -46,16 +43,16 @@
                     </div>
                     <div>
                          <label for="confimation"><span>* </span>CONFIRM PASSWORD</label>
-                         <input type="password" name="confirmation" id="confimation" required>
+                         <input type="password" name="confirmation" id="confirmation" required>
                     </div>
                     
                      </div>
             </fieldset>   
          <button type="submit">Create Account</button>
         </form>
-        <p>Already have an account? <a href="#" id="logIn">Log in</a></p>
-        <p>By continuing to use Mount you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a> </p>
-
+        <p id="login">Already have an account? <a href="#" id="logIn">Log in</a></p>
+        <p id="policy">By continuing to use Mount you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a> </p>
     </div>
+    <script src="sign.js"></script>
 </body>
 </html>
